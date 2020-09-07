@@ -44,7 +44,7 @@ class _ChatScreenState extends State<ChatScreen> {
               padding: const EdgeInsets.only(top: 5.0),
               child: Row(
                 children: [
-                  Icon(Icons.done_all,color: Colors.deepPurple,size: 20,),
+                  Icon(Icons.done_all,color: Colors.grey,size: 20,),
                   SizedBox(
                     width: 5,
                   ),

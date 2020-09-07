@@ -26,18 +26,27 @@ class _CallScreenState extends State<CallScreen> {
               title: new Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: <Widget>[
+
                   new Text(
                     callDummyData[i].name,
                     style: new TextStyle(fontWeight: FontWeight.bold),
                   ),
-                  new Icon(Icons.videocam)
+                  new Icon(Icons.videocam,color: Colors.grey,size: 30,)
                 ],
               ),
               subtitle: new Container(
                 padding: const EdgeInsets.only(top: 5.0),
-                child: new Text(
-                 callDummyData[i].when,
-                  style: new TextStyle(color: Colors.grey, fontSize: 15.0),
+                child: Row(
+                  children: [
+                    Icon(Icons.call_received,color: Colors.grey,size: 20,),
+                    SizedBox(
+                      width: 5,
+                    ),
+                    new Text(
+                     callDummyData[i].when,
+                      style: new TextStyle(color: Colors.grey, fontSize: 15.0),
+                    ),
+                  ],
                 ),
               ),
             )
